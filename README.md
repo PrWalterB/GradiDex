@@ -20,8 +20,9 @@ Aussi, cet atlas veut se rapprocher un maximum de la réalité linguistique. Veu
 
 ## À Faire
 
-* Le remplir, faut dire que pour le moment c'est un petit peu vide quoi
+* Le remplir, faut dire que pour le moment c'est un petit peu vide quoi.
 * Ajouter le choix des homonymes.
+* Ajouter les aires graphiquement.
 * Ajouter la sélection d'indexs pour la recherche.
 * Ajouter un support pour les graphies différentes.
 * Ajouter des audios ?
