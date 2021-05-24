@@ -16,10 +16,20 @@ Lorsque vous voulez ajouter un nouveau mot, il est préférable de se référer 
 
 Les indexs ne sont pas organisés de manière alphabétiques, mais en fonction de leur identifiant de manière croissante.
 
-Aussi, cet atlas veut se rapprocher un maximum de la réalité linguistique. Veuillez être sûrs qu'on traduit bien tel mot telle manière dans telle ville. (il serait aussi pas mal d'ajouter si possible l'écriture phonétique, afin de mettre en lumière les différences de prononciation en fonction de l'endroit, malgré une potentielle même orthographe)
+Aussi, cet atlas veut se rapprocher un maximum de la réalité linguistique. Veuillez être sûrs qu'on traduit bien tel mot telle manière dans telle ville. (il serait aussi pas mal d'ajouter si possible l'écriture phonétique, afin de mettre en lumière les différences de prononciation en fonction de l'endroit, malgré une potentielle même orthographe), en plus du type de mot (nm. pour nom masculin, adj. pour adjectif etc…).
 
 Si jamais il y a des mots qui n'existent pas en français (par exemple "petrychor" en anglais), il ne faut pas hésiter à mettre dans le lexique français une courte définition entre crochets à la place du mot (ex: "[odeur de la terre après la pluie]"), et vice versa, de manière à ce que ce soit le moins franco-centré possible.
-Ou alors si le mot existe mais possède des homonymes, préciser entre paranthèses (ex: "brave" en occitan -> "bon (sens humain)")
+Ou alors si le mot existe mais possède des homonymes, préciser entre paranthèses (ex: "brave" en occitan -> "bon (sens humain)").
+
+ Syntaxe d'une entrée dans le lexique:
+
+identifiant|<i>type. </i><b>mot</b> (optionellement une précision si homonyme)<br><i>prononciation</i>
+
+Exemples:
+
+    000001|<i>nm. </i><b>mur</b><br><i>\myʁ\</i>
+    000002|<i>int. </i><b>merci</b> (formule de politesse)<br><i>\mɛʁ.si\</i>
+
 
 ## À Faire
 
