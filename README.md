@@ -5,7 +5,7 @@ Il s'agit d'une modernisation des anciens atlas linguistiques papier, et d'un pr
 Projet issu de https://langues-regionales.org/
 
 ## Utilisation
-Pour utiliser l'atlas, vous pouvez cloner le dépôt sur votre site, le fichier gradidex.php fonctionne de lui même. Il est aussi disponible en ligne sur https://langues-regionales.org/gradidex/gradidex.php
+Pour utiliser l'atlas, vous pouvez cloner le dépôt sur votre site, le fichier gradidex.php fonctionne de lui même. Il est aussi disponible en ligne sur https://langues-regionales.org/GradiDex/gradidex.php
 
 ## Contribuer
 Vous pouvez contribuer à l'atlas en remplissant ou en créant un nouveau lexique (dans le fichier /dexs). Les fichiers de lexiques ont le nom de leur ville en minuscules.
