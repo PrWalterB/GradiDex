@@ -23,7 +23,7 @@ Ou alors si le mot existe mais possède des homonymes, préciser entre paranthè
 
  Syntaxe d'une entrée dans le lexique:
 
-identifiant|<i>type. </i><b>mot</b> (optionellement une précision si homonyme)<br><i>prononciation</i>
+    identifiant|<i>type. </i><b>mot</b> (optionellement une précision si homonyme)<br><i>prononciation</i>
 
 Exemples:
 
