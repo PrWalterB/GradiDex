@@ -60,7 +60,7 @@ function getFilesWith($folder, $searchFor) {
 ?>
 <!--Formulaire de recherche (NB: Le choix du lexique sera ajouté sous peu.) -->
 <form action"" method="post">
-Rechercher dans le Gradidoc:
+Rechercher dans le GradiDex:
 <input type=text name="recherche">
 <br>
 <input type=submit value="Rechercher" name="s">
