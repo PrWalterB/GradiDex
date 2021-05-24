@@ -18,6 +18,9 @@ Les indexs ne sont pas organisés de manière alphabétiques, mais en fonction d
 
 Aussi, cet atlas veut se rapprocher un maximum de la réalité linguistique. Veuillez être sûrs qu'on traduit bien tel mot telle manière dans telle ville. (il serait aussi pas mal d'ajouter si possible l'écriture phonétique, afin de mettre en lumière les différences de prononciation en fonction de l'endroit, malgré une potentielle même orthographe)
 
+Si jamais il y a des mots qui n'existent pas en français (par exemple "petrychor" en anglais), il ne faut pas hésiter à mettre dans le lexique français une courte définition entre crochets à la place du mot (ex: "[odeur de la terre après la pluie]"), et vice versa, de manière à ce que ce soit le moins franco-centré possible.
+Ou alors si le mot existe mais possède des homonymes, préciser entre paranthèses (ex: "brave" en occitan -> "bon (sens humain)")
+
 ## À Faire
 
 * Le remplir, faut dire que pour le moment c'est un petit peu vide quoi.
