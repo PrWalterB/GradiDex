@@ -90,7 +90,7 @@ if ($lex == ''){
 }
 ?>
 
-<!--Formulaire de recherche (NB: Le choix du lexique sera ajouté sous peu.) -->
+<!--Formulaire de recherche -->
 <form action"" method="get">
 Rechercher dans le GradiDex, dans le lexique de 
 <select name='lex'>
@@ -121,7 +121,7 @@ if(isset($_GET['s'])){
 if ($recherche == ''){
 	$recherche = 'crdv';
 }
-//On cherche le mot dans le lexique choisi (pour le moment seulement Paris), et on prend l'ID du mot, mais avant ça on regarde si ya pas des homonymes.
+//On cherche le mot dans le lexique choisi, et on prend l'ID du mot, mais avant ça on regarde si ya pas des homonymes.
 $matches = lineByLine('dexs/'.$lex,$recherche);
 if (sizeof($matches) > 1){
 	echo 'Plusieurs homonymes trouvés:<br>';
