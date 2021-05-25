@@ -35,6 +35,5 @@ Exemples:
 
 * Le remplir, faut dire que pour le moment c'est un petit peu vide quoi.
 * Ajouter les aires graphiquement.
-* Ajouter la sélection d'indexs pour la recherche.
 * Ajouter un support pour les graphies différentes.
 * Ajouter des audios ?
