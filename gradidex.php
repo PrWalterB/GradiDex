@@ -57,23 +57,51 @@ function getFilesWith($folder, $searchFor) {
 	}
 }
 
+//Fonction pour trouver plusieurs résultats
+function lineByLine($folder, $recherche) {
+	if ($file = fopen($folder, "r")) {
+		$foundMatch = array();
+		while(!feof($file)) {
+			$textperline = fgets($file);
+			$pattern = preg_quote($recherche,'/');
+			$pattern = "/^.*$pattern.*\$/m";
+			if(preg_match_all($pattern, $textperline, $matches)){
+				$foundMatch[] = $matches[0][0];
+			}
+		}
+		return $foundMatch;
+		fclose($file);
+	}
+}
+
 ?>
+
 <!--Formulaire de recherche (NB: Le choix du lexique sera ajouté sous peu.) -->
-<form action"" method="post">
+<form action"" method="get">
 Rechercher dans le GradiDex:
 <input type=text name="recherche">
 <br>
 <input type=submit value="Rechercher" name="s">
 <?php
-if(isset($_POST['s'])){
-	$recherche = $_POST['recherche'];
+if(isset($_GET['s'])){
+	$recherche = str_replace('>','',str_replace('<','',$_GET['recherche']));
 }
 ?>
 </form>
 
 <?php
-//On cherche le mot dans le lexique choisi (pour le moment seulement Paris), et on prend l'ID du mot
-$id = splitBar(getFileLine("dexs/paris",$recherche))[0];
+//On cherche le mot dans le lexique choisi (pour le moment seulement Paris), et on prend l'ID du mot, mais avant ça on regarde si ya pas des homonymes.
+$matches = lineByLine('dexs/paris',$recherche);
+if (sizeof($matches) > 1){
+	echo 'Plusieurs homonymes trouvés:<br>';
+	foreach ($matches as $i){
+		$j = splitBar($i);
+		echo '<a href="gradidex.php?recherche='.$j[0].'&s=Rechercher">'.str_replace('<br>',' ',$j[1]).'</a><br>';
+	}
+}
+else {
+	$id = splitBar(getFileLine("dexs/paris",$recherche))[0];
+}
 //On cherche les mots correspondant dans tout les lexiques grâce à l'ID + les coordonnées correspondantes et le nom de la Ville.
 $matched_files = getFilesWith('dexs/', $id);
 
