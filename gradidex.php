@@ -74,37 +74,67 @@ function lineByLine($folder, $recherche) {
 	}
 }
 
+
+function listFile($folder){
+	$fileList = glob($folder.'*');
+	$foundLex = array();
+	foreach($fileList as $filename){
+		$filename = str_replace($folder,'',$filename);
+		$foundLex[] = $filename;
+	}
+	return $foundLex;
+}
+$lex = str_replace('>','',str_replace('<','',$_GET['lex']));
+if ($lex == ''){
+	$lex = 'paris';
+}
 ?>
 
 <!--Formulaire de recherche (NB: Le choix du lexique sera ajouté sous peu.) -->
 <form action"" method="get">
-Rechercher dans le GradiDex:
+Rechercher dans le GradiDex, dans le lexique de 
+<select name='lex'>
+<?php
+$lexList = listFile('dexs/');
+foreach ($lexList as $i){
+	echo '<option ';
+	if ($i == $lex){
+		echo 'selected="yes"';
+	}
+	echo '>'.$i.'</option>';
+}
+?>
+</select>
+:
 <input type=text name="recherche">
 <br>
 <input type=submit value="Rechercher" name="s">
 <?php
 if(isset($_GET['s'])){
 	$recherche = str_replace('>','',str_replace('<','',$_GET['recherche']));
+	$lex = str_replace('>','',str_replace('<','',$_GET['lex']));
 }
 ?>
 </form>
 
 <?php
+if ($recherche == ''){
+	$recherche = 'crdv';
+}
 //On cherche le mot dans le lexique choisi (pour le moment seulement Paris), et on prend l'ID du mot, mais avant ça on regarde si ya pas des homonymes.
-$matches = lineByLine('dexs/paris',$recherche);
+$matches = lineByLine('dexs/'.$lex,$recherche);
 if (sizeof($matches) > 1){
 	echo 'Plusieurs homonymes trouvés:<br>';
 	foreach ($matches as $i){
 		$j = splitBar($i);
-		echo '<a href="gradidex.php?recherche='.$j[0].'&s=Rechercher">'.str_replace('<br>',' ',$j[1]).'</a><br>';
+		echo '<a href="gradidex.php?'.'lex='.$lex.'&'.'recherche='.$j[0].'&s=Rechercher">'.str_replace('<br>',' ',$j[1]).'</a><br>';
 	}
 }
 else {
-	$id = splitBar(getFileLine("dexs/paris",$recherche))[0];
+	$id = splitBar(getFileLine("dexs/".$lex,$recherche))[0];
 }
 //On cherche les mots correspondant dans tout les lexiques grâce à l'ID + les coordonnées correspondantes et le nom de la Ville.
 $matched_files = getFilesWith('dexs/', $id);
-
 //Séparation en plusieurs tableaux pour les envoyer dans le code JS
 $mot = array();
 $x = array();
