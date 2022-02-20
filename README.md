@@ -12,9 +12,9 @@ Vous pouvez contribuer à l'atlas en remplissant ou en créant un nouveau lexiqu
 À l'intérieur du lexique sont fournis le nom de la ville et les coordonnées de la ville (trouvables en cliquant sur la carte), et évidemment les mots.
 Chaque mot est précédé d'un identifiant commun à tout les lexiques.
 
-Lorsque vous voulez ajouter un nouveau mot, il est préférable de se référer à l'index de Paris (je ne suis pas devenu un fieffé centraliste parisien, mais c'est car il s'agit de celui contenant les mots français, et nous sommes de fait une communauté majoritairement francophone, malgré notre souhait de faire revenir les langues "régionales".), afin de voir si il n'existe pas déjà un identifiant pour le mot que vous voulez ajouter, et si non, afin de prendre un nouvel identifiant, sans le confondre avec celui d'un autre mot.
+Lorsque vous voulez ajouter un nouveau mot, il vous sera demandé d'utiliser un identifiant qui correspond à la traduction du mot en espéranto précédé d'un 0. Pourquoi l'espéranto ? Car c'est une langue neutre et très flexible. Nul besoin de connaître l'espéranto pour ce faire, vous pouvez vous référer à ce traducteur: https://www.majstro.com/Web/Majstro/adict.php?gebrTaal=fra&vk=0&ps=0&bronTaal=fra&doelTaal=epo&teVertalen= . Si vous n'êtes pas sûr de quel mot prendre, allez voir dans d'autres lexiques quels ID sont utilisés. Si jamais le mot en espéranto n'existe pas, mettez "00FRmot" (FR ou un autre code de langue, et mot remplacé par le mot dans cette langue.) en ID temporaire, on verra des espérantistes pour un ID final.
 
-Les indexs ne sont pas organisés de manière alphabétiques, mais en fonction de leur identifiant de manière croissante.
+Tout ceci permet d'éviter d'organiser les indexs de manière alphabétique et donc laisser plus de flexibilitée à la chose, sans prioriser une langue.
 
 Aussi, cet atlas veut se rapprocher un maximum de la réalité linguistique. Veuillez être sûrs qu'on traduit bien tel mot telle manière dans telle ville. (il serait aussi pas mal d'ajouter si possible l'écriture phonétique, afin de mettre en lumière les différences de prononciation en fonction de l'endroit, malgré une potentielle même orthographe), en plus du type de mot (nm. pour nom masculin, adj. pour adjectif etc…).
 
