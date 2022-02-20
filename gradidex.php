@@ -156,7 +156,7 @@ foreach ($matched_files as $i) {
 	$y[] = splitBar($i[2])[1];
 	$ville[] = splitBar($i[0])[1];
 }
-
+echo "Espéranto: ".substr($id, 1);
 ?>
 <div id="mapid" style="width: 600px; height: 600px;"></div>
 <script>
