@@ -19,6 +19,11 @@ function splitBar($income) {
 		$spliter = explode("|",$income);
 		return $spliter;
 }
+
+function splitPoint($income) {
+		$spliter = explode(";",$income);
+		return $spliter;
+}
 //Fonction pour retourner la ligne contenant un mot recherché
 function getFileLine($chemin, $recherche) {
 	$contents = file_get_contents($chemin);
@@ -141,7 +146,12 @@ $x = array();
 $y = array();
 $ville = array();
 foreach ($matched_files as $i) {
-	$mot[] = splitBar($i[3])[1];
+	$motus[] = splitBar($i[3])[1];
+	$type[] = splitPoint(splitBar($i[3])[1])[0];
+	$mot[] = splitPoint(splitBar($i[3])[1])[1];
+	$prcs[] = splitPoint(splitBar($i[3])[1])[2];
+	$api[] = splitPoint(splitBar($i[3])[1])[3];
+	$font[] = splitPoint(splitBar($i[3])[1])[4];
 	$x[] = splitBar($i[1])[1];
 	$y[] = splitBar($i[2])[1];
 	$ville[] = splitBar($i[0])[1];
@@ -153,7 +163,11 @@ foreach ($matched_files as $i) {
 //Pramètres par défaut de la map OSM
 var mymap = L.map('mapid').setView([46.800059, 1.867676], 6);
 //Réception des variables PHP
+var type = <?php echo json_encode($type); ?>;
 var mot = <?php echo json_encode($mot); ?>;
+var prcs = <?php echo json_encode($prcs); ?>;
+var api = <?php echo json_encode($api); ?>;
+var font = <?php echo json_encode($font); ?>;
 var x = <?php echo json_encode($x); ?>;
 var y = <?php echo json_encode($y); ?>;
 var ville = <?php echo json_encode($ville); ?>;
@@ -168,7 +182,7 @@ var ville = <?php echo json_encode($ville); ?>;
 //Boucle for pour ajouter les marqueurs de mots sur la map (ça c'est moi qui l'ai codé jle jjur)
 	for (i in mot){
 		L.marker([+(x[i]), +(y[i])]).addTo(mymap)
-		.bindPopup(mot[i]).openPopup();
+		.bindPopup(`<i>${type[i]} </i><b>${mot[i]}</b> ${prcs[i]}<br><i>${api[i]}</i> ${font[i]}`).openPopup();
 
 	}
 
