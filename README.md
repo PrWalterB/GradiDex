@@ -23,13 +23,14 @@ Ou alors si le mot existe mais possède des homonymes, préciser entre paranthè
 
  Syntaxe d'une entrée dans le lexique:
 
-    identifiant|<i>type. </i><b>mot</b> (optionellement une précision si homonyme)<br><i>prononciation</i>
+    identifiant|type.;mot;(optionellement une précision si homonyme);prononciation;source (optionnel);
 
 Exemples:
 
-    000001|<i>nm. </i><b>mur</b><br><i>\myʁ\</i>
-    000002|<i>int. </i><b>merci</b> (formule de politesse)<br><i>\mɛʁ.si\</i>
+    000001|nm.;mur;;\myʁ\;
+    000002|int.;merci;(formule de politesse);\mɛʁ.si\;
 
+NE PAS OUBLIER LES ; MÊME OPTIONNELS (mettre dans ce cas 2 ; comme sur l'exemple précedent.)
 
 ## À Faire
 
