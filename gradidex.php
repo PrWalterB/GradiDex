@@ -33,7 +33,7 @@ function getFileLine($chemin, $recherche) {
 		return $matches[0][0];
 	}
 	else{
-		printf("Mot ou expression introuvable. :^/");
+		printf("Mot ou expression introuvable. :^/<br>");
 	}
 }
 //Fonction créant un tableau contenant les lignes de tout les fichiers où le mot est recherché
