@@ -16,7 +16,7 @@ crdy|3.082418
 0tago|nm.;jorn;;[dzəoʁ];"jeour";
 0sankto|nm.;sant;;[sɑ̃];
 0tridek|num.;trente;;[tʁɛ̃'t];"trente";
-0kunfrato|nm.;confraire;[kunfʁ'ejʁ];"confreire";
+0kunfrato|nm.;confraire;[kɔ̃fʁ'ejʁ];"confreire";
 00OCbritelar|v.;britelar;[bʁitəl'a];"britela";
 0dika|adj.;gròs;;[gʁɔ];"gros";
 0betulo|nm.;bèç;;[bej];"bay";
@@ -49,13 +49,13 @@ crdy|3.082418
 0malmola|adj.;dur;;[djyʁ];"diure";
 00FRmule|nm.;miule;;[mjɔl];"miole";
 0papero|nm.;papèir;;[pɔp'ɛj];"popei";
-0aŭdi|v.;ausir;;[oʒi];"oji";
+0aŭdi|v.;ausir;;[oʒɛ̃];"eugen";
 0vivi|v.;viure;;[vjɔʁ];"viore";
 0libero|nf.;libertat;;[ljib'eʁta];"liberta";
 0vero|nf.;veritat;;[veʁj'ita];"verita";
-.Petrus|np.;Piare;;[pjaʁ];"Piare";
-.Nicolaus|np.;Nicolas;;[njicul'a];"Nicoula";
-.Antonius|np.;Antòan, 'Tòan;;[ɔ̃tw'an];"Toino";
+.Petrus|npm.;Piare;;[pjaʁ];"Piare";
+.Nicolaus|npm.;Nicolas;;[njicul'a];"Nicoula";
+.Antonius|npm.;Antòan, 'Tòan;;[ɔ̃tw'an];"Toino";
 0lasi|v.;laissar;;[lesa];"lessa";
 0ĉapo|nm.;bonet;;[bunə];"boune";
 0babilema|adj.;bavard;;[bɔv'aʁ];"bova";
@@ -68,5 +68,16 @@ crdy|3.082418
 0perfekta|adj.;parfeit;;[pɔʁf'ej];"parfait";
 0gloro|nf.;glòria;;[gl'ɔʁjɔ];"gloria";
 0sukuro|nm.;secors;;[sək'uʁ];"secou";
-0fabeli
-0historio
+0fabeli|v.;contar;;[kɔ̃ta];"conta";
+0historio|nf.;istòria;;[istɔʁjɔ];"histoiro";
+00FRplume|nf.;pluma;;[plymɔ];"plumo";
+0konduki|v.;conduire;;[kɔ̃djyiʁ];"conduire";
+0larĝa|adj.;large;;[laʁdz];"lardze";
+.(Elisa)beth|npf.;Babet;;[bɔb'e];"Bobet";
+.Franciscus|npm.;Francés;;[fʁɑ̃s'ej];"Francei";
+0barbo|nf.;barba;;[b'aʁbɔ];"barbo";
+0malpura|adj.;sala;;[s'alɔ];"salo";
+.Berhthramn|npm.;Bartrand;;[bɔʁtʁ'ɑ̃];"Botrand";
+00FRfinancier|nm.;financèir;;[fjinɑ̃ʃ'e];"finanché";
+0stiri|v.;menar;;[məna];"mena";
+0urbo|nf.;viala;;[vj'alɔ];"viallo";
